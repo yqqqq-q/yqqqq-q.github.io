@@ -49,7 +49,8 @@ export const MOBILE_NAV: NavItem<Route>[] = [
   ...MAIN_NAV,
 ]
 
-export const X_HANDLE = SOCIAL.x.handle
+/** Twitter/X card handle. Unset when there is no X profile in `SOCIAL`. */
+export const X_HANDLE: string | undefined = undefined
 export const GITHUB_USERNAME = SOCIAL.github.handle
 export const SOURCE_CODE_GITHUB_REPO = "ncdai/chanhdai.com"
 export const SOURCE_CODE_GITHUB_URL = "https://github.com/ncdai/chanhdai.com"
