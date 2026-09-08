@@ -29,6 +29,6 @@ The site is meant for [https://yqqqq-q.github.io](https://yqqqq-q.github.io).
 
 1. Push this repo to GitHub (user site repo `yqqqq-q.github.io`).
 2. In the repo: Settings → Pages → Source → GitHub Actions.
-3. Push to `personalized` or `main`. The Deploy GitHub Pages workflow builds with `NEXT_PUBLIC_APP_URL=https://yqqqq-q.github.io` and publishes `out/`.
+3. Push to `personalized`. The Deploy GitHub Pages workflow builds with `NEXT_PUBLIC_APP_URL=https://yqqqq-q.github.io` and publishes `out/`.
 
 `.env.local` is gitignored; the workflow sets the public URL at build time.

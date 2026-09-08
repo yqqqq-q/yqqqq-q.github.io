@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yqqqq-q/minimal-dev-portfolio.git"
+    "url": "git+https://github.com/yqqqq-q/yqqqq-q.github.io.git"
   },
   "scripts": {
     "dev": "next dev",
