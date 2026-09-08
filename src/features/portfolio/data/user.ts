@@ -7,21 +7,25 @@ export const USER: User = {
   username: "yqq",
   gender: "female",
   pronouns: "she/her",
-  bio: "ahhhhhhhhhhhh",
-  flipSentences: ["full full stack", "Ultimate Frisbee player"],
+  bio: "",
+  flipSentences: [
+    "Lead software engineer at Torchlight",
+    "Full-stack, ML, and cloud",
+    "Computer engineering at Northwestern",
+    "Ultimate Frisbee player",
+  ],
   address: "Evanston, IL, USA | Zhejiang, China",
   phoneNumberB64: "KzEyMjQ0NTE1MTU5",
   emailB64: "eWFuZy5xaWFuMjEzMUBnbWFpbC5jb20=",
-  website: "https://yangqian.me",
+  website: "https://yqqqq-q.github.io",
   jobTitle: "Computer Engineer",
   jobs: [],
-  about: `- my name is Yang Qian, a computer engineer.
-- I'm currently a master student at Northwestern University, studying computer science.
-- I'm interested in computer vision, machine learning, and artificial intelligence.
-- I'm also interested in music and art.
-- I'm a quick learner and I'm always looking for new challenges.
-- I'm a team player and I'm always looking for new challenges.
-- I'm a quick learner and I'm always looking for new challenges.
+  about: `- Master's student in Computer Engineering at Northwestern University.
+- Lead software engineer at Torchlight Basketball Society, building full-stack apps with React, Spring Boot, AWS, and PostgreSQL.
+- Previously interned at fAIshion, China Telecom, CarbonTwin, and SUPCON — from e-commerce data pipelines to LLM systems and image classification.
+- Working on EMG gesture recognition and sports video analysis with PyTorch, YOLO, and vision transformers.
+- Studying for the AWS Solutions Architect Associate certification.
+- First-Class Honours from the University of Liverpool; former Ultimate Frisbee team captain.
 `,
   avatar: "/profile.png",
   avatarVariants: {

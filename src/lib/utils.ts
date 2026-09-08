@@ -1,5 +1,6 @@
 export { cn } from "cn"
 
 export function absoluteUrl(path: string) {
-  return `${process.env.NEXT_PUBLIC_APP_URL}${path}`
+  const base = process.env.NEXT_PUBLIC_APP_URL || "https://yqqqq-q.github.io"
+  return `${base}${path}`
 }

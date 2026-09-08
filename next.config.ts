@@ -9,6 +9,8 @@ const nextConfig: NextConfig = {
   env: {
     BUILD_TIMESTAMP: new Date().toISOString(),
   },
+  output: "export",
+  trailingSlash: true,
   reactStrictMode: true,
   typedRoutes: true,
   transpilePackages: ["next-mdx-remote"],
@@ -27,6 +29,7 @@ const nextConfig: NextConfig = {
     ],
   },
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: "https",
@@ -49,21 +52,6 @@ const nextConfig: NextConfig = {
           },
         }
       : undefined,
-  async redirects() {
-    return [
-      { source: "/blog/:path*", destination: "/", permanent: true },
-      { source: "/components/:path*", destination: "/", permanent: true },
-      { source: "/blocks/:path*", destination: "/", permanent: true },
-      { source: "/sponsors", destination: "/", permanent: true },
-      { source: "/bookmarks", destination: "/", permanent: true },
-      { source: "/insights", destination: "/", permanent: true },
-      { source: "/testimonials", destination: "/", permanent: true },
-      { source: "/timeline", destination: "/", permanent: true },
-      { source: "/preview/:path*", destination: "/", permanent: true },
-      { source: "/game", destination: "/", permanent: true },
-      { source: "/wall-of-love", destination: "/", permanent: true },
-    ]
-  },
 }
 
 export default nextConfig
