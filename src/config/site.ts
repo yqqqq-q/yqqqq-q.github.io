@@ -22,31 +22,13 @@ export const META_THEME_COLORS = {
   dark: "#09090b",
 }
 
-export const MAIN_NAV: NavItem<Route>[] = [
-  {
-    title: "Components",
-    href: "/components",
-  },
-  {
-    title: "Blocks",
-    href: "/blocks",
-  },
-  {
-    title: "Blog",
-    href: "/blog",
-  },
-  {
-    title: "Sponsors",
-    href: "/sponsors",
-  },
-]
+export const MAIN_NAV: NavItem<Route>[] = []
 
 export const MOBILE_NAV: NavItem<Route>[] = [
   {
     title: "Home",
     href: "/",
   },
-  ...MAIN_NAV,
 ]
 
 /** Twitter/X card handle. Unset when there is no X profile in `SOCIAL`. */

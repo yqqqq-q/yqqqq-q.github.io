@@ -1,9 +1,8 @@
 "use client"
 
-import Link from "next/link"
 import { copyText } from "@/utils/copy"
 import { useTiks } from "@rexa-developer/tiks/react"
-import { ArrowUpRight, Download, SquareDashed, Type } from "lucide-react"
+import { ArrowUpRight, Download, Type } from "lucide-react"
 import { toast } from "sonner"
 
 import {
@@ -57,17 +56,6 @@ export function BrandContextMenu({ children }: { children: React.ReactNode }) {
           <Type />
           Copy Logotype as SVG
         </ContextMenuItem>
-
-        <ContextMenuSeparator />
-
-        <ContextMenuItem
-          render={
-            <Link href="/blog/chanhdai-brand">
-              <SquareDashed />
-              Brand Guidelines
-            </Link>
-          }
-        />
 
         <ContextMenuItem
           render={

@@ -2,11 +2,7 @@ import { AvatarLights } from "@/features/portfolio/components/avatar-lights"
 import { USER } from "@/features/portfolio/data/user"
 
 import { AvatarLightsToggle } from "./avatar-lights-toggle"
-import { ChanhDaiMarkIsometric } from "./chanhdai-mark-isometric"
 import { FlipSentences } from "./flip-sentences"
-import { HandwrittenArrow, HandwrittenNote } from "./handwritten-note"
-import { PronounceMyName } from "./pronounce-my-name"
-import { VerifiedIcon } from "./verified-icon"
 
 export function ProfileHeader() {
   return (

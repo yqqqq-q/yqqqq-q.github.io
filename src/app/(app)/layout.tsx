@@ -1,7 +1,5 @@
 import dynamic from "next/dynamic"
 
-import { SiteBottomNav } from "@/components/site-bottom-nav"
-import { SiteFooterCad } from "@/components/site-footer-cad"
 import { SiteHeader } from "@/components/site-header"
 
 const ScrollToTop = dynamic(() =>
