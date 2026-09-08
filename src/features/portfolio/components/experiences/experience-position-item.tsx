@@ -22,8 +22,17 @@ export function ExperiencePositionItem({
   position: ExperiencePosition
 }) {
   const { start, end } = position.employmentPeriod
-  const isOngoing = !end
-  const duration = formatDuration(start, end)
+  const isOngoing = !end || isPresent(end)
+  const startYear = parseYear(start)
+  const resolvedEndYear = isOngoing
+    ? new Date().getFullYear()
+    : end
+      ? parseYear(end)
+      : null
+  const isSameYear = startYear !== null && startYear === resolvedEndYear
+  const duration = isSameYear
+    ? ""
+    : formatDuration(start, isOngoing ? undefined : end)
 
   return (
     <Collapsible
@@ -72,16 +81,22 @@ export function ExperiencePositionItem({
           <div>
             <dt className="sr-only">Employment Period</dt>
             <dd className="flex items-center gap-0.5 tabular-nums">
-              <span>{start}</span>
-              <span className="font-mono">—</span>
-              {isOngoing ? (
-                <InfinityIcon
-                  className="size-4.5 translate-y-[0.5px]"
-                  aria-label="Present"
-                  strokeWidth={1.5}
-                />
+              {isSameYear ? (
+                <span>{startYear}</span>
               ) : (
-                <span>{end}</span>
+                <>
+                  <span>{start}</span>
+                  <span className="font-mono">—</span>
+                  {isOngoing ? (
+                    <InfinityIcon
+                      className="size-4.5 translate-y-[0.5px]"
+                      aria-label="Present"
+                      strokeWidth={1.5}
+                    />
+                  ) : (
+                    <span>{end}</span>
+                  )}
+                </>
               )}
             </dd>
           </div>
@@ -121,6 +136,16 @@ export function ExperiencePositionItem({
       )}
     </Collapsible>
   )
+}
+
+function isPresent(value: string): boolean {
+  return value.trim().toLowerCase() === "present"
+}
+
+function parseYear(period: string): number | null {
+  const yearPart = period.includes(".") ? period.split(".")[1] : period
+  const year = parseInt(yearPart, 10)
+  return Number.isFinite(year) ? year : null
 }
 
 function formatDuration(start: string, end?: string): string {
