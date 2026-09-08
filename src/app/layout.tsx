@@ -54,6 +54,11 @@ export const metadata: Metadata = {
     },
   ],
   creator: USER.displayName,
+  applicationName: USER.displayName,
+  appleWebApp: {
+    capable: false,
+    title: USER.displayName,
+  },
   openGraph: {
     siteName: SITE_INFO.name,
     url: "/",
