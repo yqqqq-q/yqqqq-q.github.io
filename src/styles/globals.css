@@ -193,6 +193,18 @@
   }
 }
 
+@utility rule-divider {
+  @apply relative;
+  &:before {
+    content: "";
+    @apply absolute inset-x-0 top-1/2 h-px -translate-y-1/2 bg-foreground/20;
+  }
+  &:after {
+    content: "";
+    @apply absolute top-1/2 left-1/2 size-1.5 -translate-x-1/2 -translate-y-1/2 rotate-45 border border-foreground/35 bg-background;
+  }
+}
+
 @utility step {
   counter-increment: step;
   @apply max-md:pl-10;
@@ -516,7 +528,7 @@
   }
 
   body {
-    @apply bg-background text-foreground antialiased;
+    @apply bg-background font-sans text-foreground antialiased;
     font-synthesis-weight: none;
     text-rendering: optimizeLegibility;
   }

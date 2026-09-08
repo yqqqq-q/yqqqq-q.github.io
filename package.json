@@ -1,24 +1,16 @@
 {
-  "name": "chanhdai.com",
+  "name": "yang-qian-portfolio",
   "version": "0.1.0",
-  "description": "A pixel-perfect dev portfolio and shadcn registry.",
-  "homepage": "https://chanhdai.com",
+  "description": "Yang Qian's personal portfolio.",
+  "homepage": "https://yangqian.me",
   "license": "MIT",
   "author": {
-    "name": "Nguyen Chanh Dai",
-    "email": "dai@chanhdai.com",
-    "url": "https://github.com/ncdai"
+    "name": "Yang Qian",
+    "url": "https://github.com/yqqqq-q"
   },
-  "contributors": [
-    {
-      "name": "Nguyen Chanh Dai",
-      "email": "dai@chanhdai.com",
-      "url": "https://github.com/ncdai"
-    }
-  ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ncdai/chanhdai.com.git"
+    "url": "git+https://github.com/yqqqq-q/minimal-dev-portfolio.git"
   },
   "scripts": {
     "dev": "next dev",
@@ -72,7 +64,6 @@
     "dialkit": "^1.1.0",
     "fumadocs-core": "^16.10.5",
     "fumadocs-typescript": "^5.2.6",
-    "geist": "^1.7.0",
     "hast-util-to-jsx-runtime": "^2.3.6",
     "jotai": "^2.18.1",
     "libphonenumber-js": "^1.12.4",

@@ -6,7 +6,7 @@ import { USER } from "@/features/portfolio/data/user"
 
 export const SITE_INFO = {
   name: USER.displayName,
-  url: process.env.NEXT_PUBLIC_APP_URL || "https://chanhdai.com",
+  url: process.env.NEXT_PUBLIC_APP_URL || USER.website,
   ogImage: USER.ogImage,
   description: USER.bio,
   keywords: USER.keywords,
@@ -14,7 +14,7 @@ export const SITE_INFO = {
 
 export const LICENSE = {
   name: "MIT License",
-  url: "https://github.com/ncdai/chanhdai.com/blob/main/LICENSE",
+  url: "https://github.com/yqqqq-q/minimal-dev-portfolio/blob/main/LICENSE",
 }
 
 export const META_THEME_COLORS = {
@@ -34,11 +34,11 @@ export const MOBILE_NAV: NavItem<Route>[] = [
 /** Twitter/X card handle. Unset when there is no X profile in `SOCIAL`. */
 export const X_HANDLE: string | undefined = undefined
 export const GITHUB_USERNAME = SOCIAL.github.handle
-export const SOURCE_CODE_GITHUB_REPO = "ncdai/chanhdai.com"
-export const SOURCE_CODE_GITHUB_URL = "https://github.com/ncdai/chanhdai.com"
+export const SOURCE_CODE_GITHUB_REPO = `${SOCIAL.github.handle}/minimal-dev-portfolio`
+export const SOURCE_CODE_GITHUB_URL = `https://github.com/${SOURCE_CODE_GITHUB_REPO}`
 
-export const SPONSORSHIP_URL = "https://github.com/sponsors/ncdai"
+export const SPONSORSHIP_URL = SOCIAL.github.href
 
 export const UTM_PARAMS = {
-  utm_source: "chanhdai.com",
+  utm_source: "yangqian.me",
 }

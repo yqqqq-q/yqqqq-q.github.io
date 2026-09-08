@@ -12,7 +12,7 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   typedRoutes: true,
   transpilePackages: ["next-mdx-remote"],
-  allowedDevOrigins: ["ncdai.localhost", "ncdai.local"],
+  allowedDevOrigins: ["ncdai.localhost", "ncdai.local", "localhost"],
   devIndicators: false,
   experimental: {
     // Rewrite barrel imports to deep imports so a single icon doesn't pull the

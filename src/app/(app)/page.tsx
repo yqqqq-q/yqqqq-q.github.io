@@ -4,7 +4,6 @@ import type { ProfilePage, WithContext } from "schema-dts"
 import { JSON_LD_ID } from "@/config/json-ld"
 import { JsonLdScript } from "@/lib/json-ld"
 import { absoluteUrl, cn } from "@/lib/utils"
-import { Awards } from "@/features/portfolio/components/awards"
 import { Certifications } from "@/features/portfolio/components/certifications"
 import { Education } from "@/features/portfolio/components/education"
 import { Experiences } from "@/features/portfolio/components/experiences"
@@ -26,29 +25,12 @@ export default function HomePage() {
     <>
       <JsonLdScript data={getProfilePageJsonLd()} />
 
-      <div className="[--separator-height:--spacing(8)] **:data-[slot=panel]:scroll-mt-[calc(var(--header-height)+var(--separator-height))]">
-        <div className="mx-auto md:max-w-3xl">
+      <div className="[--separator-height:--spacing(12)] **:data-[slot=panel]:scroll-mt-(--header-height)">
+        <div className="mx-auto md:max-w-2xl">
           <ProfileHeader />
-          <Separator />
-
           <Overview />
           <SocialLinks />
-          {/* <GitHubContributions /> */}
           <Separator />
-
-          {/* <Hello />
-          <SponsorsCarousel />
-          <Testimonials />
-          <Separator />
-
-          <Components />
-          <Separator /> */}
-
-          {/* <Blocks />
-          <Separator /> */}
-
-          {/* <Blog />
-          <Separator /> */}
 
           <TechStack />
           <Separator />
@@ -62,24 +44,8 @@ export default function HomePage() {
           <Projects />
           <Separator />
 
-          <Awards />
-          <Separator />
-
           <Certifications />
           <Separator />
-          {/* 
-          <IntellectualProperty />
-          <Separator /> */}
-
-          {/* <Bookmarks />
-          <Separator /> */}
-
-          {/* <Suspense fallback={<InsightsSkeleton />}>
-            <Insights />
-          </Suspense>
-          <Separator /> */}
-
-          {/* <Sponsors /> */}
         </div>
       </div>
     </>
@@ -93,8 +59,6 @@ function getProfilePageJsonLd(): WithContext<ProfilePage> {
     "@id": absoluteUrl("/"),
     dateCreated: new Date(USER.dateCreated).toISOString(),
     dateModified: new Date().toISOString(),
-    // Reference the Person defined in the WebSite node (rendered globally in
-    // the root layout) so both blocks resolve to the same entity.
     mainEntity: { "@id": JSON_LD_ID.person },
   }
 }
@@ -102,19 +66,8 @@ function getProfilePageJsonLd(): WithContext<ProfilePage> {
 function Separator({ className }: { className?: string }) {
   return (
     <div
-      className={cn(
-        "stripe-divider h-(--separator-height) w-full border-x",
-        className
-      )}
-    >
-      {/* <div
-        className="absolute -top-1.25 -left-1.25 z-2 flex size-2.25 border bg-background"
-        aria-hidden
-      />
-      <div
-        className="absolute -top-1.25 -right-1.25 z-2 flex size-2.25 border bg-background"
-        aria-hidden
-      /> */}
-    </div>
+      className={cn("rule-divider h-(--separator-height) w-full", className)}
+      aria-hidden
+    />
   )
 }

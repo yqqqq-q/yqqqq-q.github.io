@@ -7,10 +7,7 @@ function Panel({ className, ...props }: React.ComponentProps<"section">) {
   return (
     <section
       data-slot="panel"
-      className={cn(
-        "screen-line-top screen-line-bottom border-x screen-line-bottom-border",
-        className
-      )}
+      className={cn("relative", className)}
       {...props}
     />
   )
@@ -21,7 +18,7 @@ function PanelHeader({ className, ...props }: React.ComponentProps<"header">) {
     <header
       data-slot="panel-header"
       className={cn(
-        "screen-line-bottom px-4 has-data-[slot=panel-description]:*:data-[slot=panel-title]:screen-line-bottom",
+        "sticky top-(--header-height) z-40 -mx-1 border-b border-foreground/10 bg-background/80 px-1 py-2.5 backdrop-blur-md",
         className
       )}
       {...props}
@@ -40,7 +37,7 @@ function PanelTitle({
     <Comp
       data-slot="panel-title"
       className={cn(
-        "group/panel-title font-heading text-3xl font-medium tracking-tight text-balance",
+        "group/panel-title relative font-heading text-2xl font-bold tracking-tight text-balance sm:text-[1.75rem]",
         className
       )}
       {...props}
@@ -52,7 +49,7 @@ function PanelTitleSup({ className, ...props }: React.ComponentProps<"sup">) {
   return (
     <sup
       className={cn(
-        "top-[-0.75em] ml-1 text-sm font-medium tracking-normal text-muted-foreground",
+        "top-[-0.75em] ml-1 font-sans text-sm font-medium tracking-normal text-muted-foreground",
         className
       )}
       {...props}
@@ -78,7 +75,7 @@ function PanelDescription({
 
 function PanelContent({ className, ...props }: React.ComponentProps<"div">) {
   return (
-    <div data-slot="panel-body" className={cn("p-4", className)} {...props} />
+    <div data-slot="panel-body" className={cn("py-5", className)} {...props} />
   )
 }
 

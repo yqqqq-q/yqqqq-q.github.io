@@ -2,12 +2,11 @@ import type { Certification } from "../types/certifications"
 
 export const CERTIFICATIONS: Certification[] = [
   {
-    title: "Gemini Certified Educator",
-    issuer: "Google for Education",
-    issuerIconName: "google",
-    issueDate: "2025-12-09",
-    credentialID: "c05d3bad-3be0-4915-b41c-b8384357093a",
+    title: "AWS Certified Solutions Architect – Associate (in progress)",
+    issuer: "Amazon Web Services",
+    issueDate: "2026-10-08",
+    credentialID: "",
     credentialURL:
-      "https://edu.google.accredible.com/c05d3bad-3be0-4915-b41c-b8384357093a",
+      "https://aws.amazon.com/certification/certified-solutions-architect-associate/",
   },
 ]

@@ -29,9 +29,9 @@ export function ProjectItem({
   className?: string
   project: Project
 }) {
-  const { start, end } = project.period
-  const isOngoing = !end
-  const isSinglePeriod = end === start
+  // const { start, end } = project.period
+  // const isOngoing = !end
+  // const isSinglePeriod = end === start
 
   return (
     <Collapsible className={className} defaultOpen={project.isExpanded}>
@@ -57,7 +57,7 @@ export function ProjectItem({
               {project.title}
             </h3>
 
-            <dl className="text-sm text-muted-foreground">
+            {/* <dl className="text-sm text-muted-foreground">
               <dt className="sr-only">Period</dt>
               <dd className="flex items-center gap-0.5">
                 <span>{start}</span>
@@ -75,7 +75,7 @@ export function ProjectItem({
                   </>
                 )}
               </dd>
-            </dl>
+            </dl> */}
           </div>
 
           <Tooltip>

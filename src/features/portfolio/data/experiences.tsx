@@ -1,9 +1,4 @@
-import {
-  BriefcaseBusinessIcon,
-  CodeXmlIcon,
-  DraftingCompassIcon,
-  LightbulbIcon,
-} from "lucide-react"
+import { CodeXmlIcon } from "lucide-react"
 
 import type { Experience } from "@/features/portfolio/types/experiences"
 

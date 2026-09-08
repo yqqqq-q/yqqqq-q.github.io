@@ -29,7 +29,7 @@ export function CollapsibleList<T>({
             key={
               typeof keyExtractor === "function" ? keyExtractor(item) : index
             }
-            className="border-b border-line"
+            className="border-b border-foreground/10"
           >
             {renderItem(item)}
           </li>
@@ -44,7 +44,7 @@ export function CollapsibleList<T>({
                 ? keyExtractor(item)
                 : max + index
             }
-            className="border-b border-line"
+            className="border-b border-foreground/10"
           >
             {renderItem(item)}
           </li>
@@ -52,7 +52,7 @@ export function CollapsibleList<T>({
       </CollapsibleContent>
 
       {items.length > max && (
-        <div className="screen-line-top -mt-px flex items-center justify-center py-4">
+        <div className="flex items-center justify-center py-4">
           <CollapsibleTrigger
             render={
               <Button

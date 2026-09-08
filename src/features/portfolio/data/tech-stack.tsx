@@ -1,3 +1,12 @@
+import {
+  BlendIcon,
+  ClapperboardIcon,
+  DiscIcon,
+  ShirtIcon,
+  SparklesIcon,
+  VolleyballIcon,
+} from "lucide-react"
+
 import { GitHubIcon, JsIcon, OpenAIIcon, TsIcon } from "@/components/icons"
 
 import type { TechStack } from "../types/tech-stack"
@@ -488,5 +497,47 @@ export const TECH_STACK: TechStack[] = [
       </svg>
     ),
     categories: ["Cloud & DevOps"],
+  },
+  {
+    key: "3x3-basketball",
+    title: "3x3 Basketball",
+    href: "https://en.wikipedia.org/wiki/3x3_basketball",
+    icon: <VolleyballIcon />,
+    categories: ["Also"],
+  },
+  {
+    key: "ultimate-frisbee",
+    title: "Ultimate Frisbee",
+    href: "https://en.wikipedia.org/wiki/Ultimate_(sport)",
+    icon: <DiscIcon />,
+    categories: ["Also"],
+  },
+  {
+    key: "premiere",
+    title: "Premiere",
+    href: "https://www.adobe.com/products/premiere.html",
+    icon: <ClapperboardIcon />,
+    categories: ["Also"],
+  },
+  {
+    key: "photoshop",
+    title: "Photoshop",
+    href: "https://www.adobe.com/products/photoshop.html",
+    icon: <BlendIcon />,
+    categories: ["Also"],
+  },
+  {
+    key: "anime",
+    title: "Anime",
+    href: "https://en.wikipedia.org/wiki/Anime",
+    icon: <SparklesIcon />,
+    categories: ["Also"],
+  },
+  {
+    key: "cosplay",
+    title: "Cosplay",
+    href: "https://en.wikipedia.org/wiki/Cosplay",
+    icon: <ShirtIcon />,
+    categories: ["Also"],
   },
 ]

@@ -15,12 +15,7 @@ export function TechStack() {
         </PanelTitle>
       </PanelHeader>
 
-      <div className="relative [--badge-height:--spacing(6)] [--col-left-width:--spacing(48)]">
-        <div
-          className="pointer-events-none absolute inset-y-0 left-(--col-left-width) -z-1 w-px border-r border-dashed border-line max-sm:hidden"
-          aria-hidden
-        />
-
+      <div className="relative [--badge-height:--spacing(6)] [--col-left-width:--spacing(40)]">
         {Object.entries(groupByCategory(TECH_STACK)).map(
           ([category, items], index) => {
             const categoryId = `${ID}-${category
@@ -31,9 +26,12 @@ export function TechStack() {
             return (
               <div
                 key={category}
-                className="grid items-start gap-y-2 border-b border-line py-4 last:border-none sm:grid-cols-[var(--col-left-width)_1fr]"
+                className="grid items-start gap-x-6 gap-y-2 border-b border-foreground/10 py-4 last:border-none sm:grid-cols-[var(--col-left-width)_1fr]"
               >
-                <div id={categoryId} className="pl-4 text-sm/(--badge-height)">
+                <div
+                  id={categoryId}
+                  className="text-sm/(--badge-height) tracking-wide"
+                >
                   <span
                     className="mr-1.5 font-mono text-muted-foreground/80 select-none"
                     aria-hidden
@@ -45,7 +43,7 @@ export function TechStack() {
 
                 <ul
                   aria-labelledby={categoryId}
-                  className="flex flex-wrap gap-1.5 px-4"
+                  className="flex flex-wrap gap-1.5"
                 >
                   {items.map((item) => {
                     return (

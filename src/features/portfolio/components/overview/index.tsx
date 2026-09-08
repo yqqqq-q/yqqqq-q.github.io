@@ -24,10 +24,10 @@ import { PhoneItem } from "./phone-item"
 
 export function Overview() {
   return (
-    <Panel className="screen-line-bottom-none">
+    <Panel>
       <h2 className="sr-only">Overview</h2>
 
-      <PanelContent className="grid gap-x-4 gap-y-2.5 sm:grid-cols-2">
+      <PanelContent className="grid gap-x-8 gap-y-2.5 sm:grid-cols-2">
         {USER.jobs.map((job, index) => {
           return (
             <JobItem
@@ -81,8 +81,6 @@ export function Overview() {
           </IntroItemContent>
         </IntroItem>
       </PanelContent>
-
-      <div className="pointer-events-none absolute inset-y-0 left-1/2 -z-1 w-px -translate-x-2.25 border-r border-dashed border-line max-sm:hidden" />
     </Panel>
   )
 }
