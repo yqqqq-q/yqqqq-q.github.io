@@ -1,8 +1,6 @@
 import Image from "next/image"
-import { addQueryParams } from "@/utils/url"
-import { BoxIcon, InfinityIcon, LinkIcon } from "lucide-react"
+import { BoxIcon } from "lucide-react"
 
-import { UTM_PARAMS } from "@/config/site"
 import { IconTile } from "@/components/ui/icon-tile"
 import { Tag } from "@/components/ui/tag"
 import {
@@ -34,7 +32,7 @@ export function ProjectItem({
   // const isSinglePeriod = end === start
 
   return (
-    <Collapsible className={className} defaultOpen={project.isExpanded}>
+    <Collapsible className={className} defaultOpen={false}>
       <CollapsibleTrigger className="group/project flex w-full items-center text-left hover:bg-accent-muted">
         {project.logo ? (
           <Image
@@ -83,12 +81,12 @@ export function ProjectItem({
               render={
                 <a
                   className="relative flex size-6 shrink-0 items-center justify-center text-muted-foreground after:absolute after:-inset-2 hover:text-foreground"
-                  href={addQueryParams(project.link, UTM_PARAMS)}
+                  // href={addQueryParams(project.link, UTM_PARAMS)}
                   target="_blank"
                   rel="noopener"
                   aria-label="Open project"
                 >
-                  <LinkIcon className="pointer-events-none size-4" />
+                  {/* <LinkIcon className="pointer-events-none size-4" /> */}
                 </a>
               }
             />

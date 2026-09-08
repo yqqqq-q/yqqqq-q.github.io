@@ -29,7 +29,6 @@ export const PROJECTS: Project[] = [
   - Processed EMG signals for non-natural hand gesture recognition
   - Applied preprocessing, feature extraction, and machine learning for gesture classification`,
     icon: <BrainCircuitIcon />,
-    isExpanded: true,
   },
 
   {
@@ -52,7 +51,6 @@ export const PROJECTS: Project[] = [
   - Built and evaluated models for sports video analysis and simulation
   - Applied YOLO and Vision Transformers to sports-related computer vision tasks`,
     icon: <ChartNoAxesCombinedIcon />,
-    isExpanded: true,
   },
   {
     id: "llm-writer-tone",
@@ -75,7 +73,6 @@ export const PROJECTS: Project[] = [
   - Compared n-gram and neural language models for tone imitation performance
   - Applied PyTorch and LLM-based approaches to text generation and style analysis`,
     icon: <BrainCircuitIcon />,
-    isExpanded: true,
   },
   {
     id: "word-embedding-quantization",
@@ -99,7 +96,6 @@ export const PROJECTS: Project[] = [
   - Evaluated the trade-off between model efficiency, resource usage, and representation quality
   - Analyzed the potential for quantized embeddings to reduce energy consumption`,
     icon: <CpuIcon />,
-    isExpanded: true,
   },
 
   {
@@ -122,7 +118,6 @@ export const PROJECTS: Project[] = [
   - Integrated Arduino-based hardware with Azure IoT Hub for secure device connectivity
   - Implemented device communication and data-processing workflows`,
     icon: <CloudCogIcon />,
-    isExpanded: true,
   },
 
   {
@@ -138,7 +133,6 @@ export const PROJECTS: Project[] = [
   - Implemented gameplay mechanics, player controls, and interactive game systems
   - Applied object-oriented programming and software engineering principles`,
     icon: <Gamepad2Icon />,
-    isExpanded: true,
   },
 
   {
@@ -160,6 +154,5 @@ export const PROJECTS: Project[] = [
   - Designed and implemented interactive GUI components
   - Applied object-oriented design and C++ software engineering practices`,
     icon: <CodeXmlIcon />,
-    isExpanded: true,
   },
 ]

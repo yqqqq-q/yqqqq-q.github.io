@@ -4,6 +4,7 @@ import type { ProfilePage, WithContext } from "schema-dts"
 import { JSON_LD_ID } from "@/config/json-ld"
 import { JsonLdScript } from "@/lib/json-ld"
 import { absoluteUrl, cn } from "@/lib/utils"
+import { Acknowledgments } from "@/features/portfolio/components/acknowledgments"
 import { Certifications } from "@/features/portfolio/components/certifications"
 import { Education } from "@/features/portfolio/components/education"
 import { Experiences } from "@/features/portfolio/components/experiences"
@@ -45,6 +46,9 @@ export default function HomePage() {
           <Separator />
 
           <Certifications />
+          <Separator />
+
+          <Acknowledgments />
           <Separator />
         </div>
       </div>

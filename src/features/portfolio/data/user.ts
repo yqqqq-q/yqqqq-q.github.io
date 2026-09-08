@@ -10,8 +10,8 @@ export const USER: User = {
   bio: "",
   flipSentences: [
     "Lead software engineer at Torchlight",
-    "Full-stack, ML, and cloud",
-    "Computer engineering at Northwestern",
+    "Full-stack, ML, DevOps,and cloud",
+    "Master Degree in Computer Engineering at Northwestern",
     "Ultimate Frisbee player",
   ],
   address: "Evanston, IL, USA | Zhejiang, China",
