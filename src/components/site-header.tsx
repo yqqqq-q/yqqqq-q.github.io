@@ -48,10 +48,10 @@ export function SiteHeader() {
 
         <div className="flex-1" />
 
-        <NavDesktop items={MAIN_NAV} />
+        {/* <NavDesktop items={MAIN_NAV} /> */}
 
         <div className="flex items-center max-sm:*:data-[slot=command-menu-trigger]:hidden">
-          <Separator
+          {/* <Separator
             orientation="vertical"
             className="mr-2 max-sm:hidden data-vertical:h-5 data-vertical:self-center"
           />
@@ -69,7 +69,7 @@ export function SiteHeader() {
           <Separator
             orientation="vertical"
             className="mx-2 data-vertical:h-5 data-vertical:self-center"
-          />
+          /> */}
           <ThemeToggle />
         </div>
 

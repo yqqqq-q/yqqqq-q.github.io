@@ -1,41 +1,40 @@
 import type { User } from "@/features/portfolio/types/user"
 
 export const USER: User = {
-  firstName: "Chánh Đại",
-  lastName: "Nguyễn",
-  displayName: "Chánh Đại",
+  firstName: "Yang",
+  lastName: "Qian",
+  displayName: "Yang Qian",
   username: "ncdai",
-  gender: "male",
-  pronouns: "he/him",
-  bio: "Creating with code. Small details matter.",
-  flipSentences: [
-    "Creating with code. Small details matter.",
-    "Design Engineer.",
-    "Open source contributor.",
-    "I own a vintage iPhone.",
-  ],
-  address: "Ho Chi Minh City, Viet Nam",
-  phoneNumberB64: "Kzg0Nzc3ODg4MTQ4", // E.164 format, base64 encoded (https://t.io.vn/base64-string-converter)
-  emailB64: "ZGFpQGNoYW5oZGFpLmNvbQ==", // base64 encoded
-  website: "https://chanhdai.com",
-  jobTitle: "Design Engineer",
+  gender: "female",
+  pronouns: "she/her",
+  bio: "ahhhhhhhhhhhh",
+  flipSentences: ["full fulil stack", "Ultimate Frisbee player"],
+  address: "Evanston, IL, USA | Zhejiang, China",
+  phoneNumberB64: "KzEyMjQ0NTE1MTU5",
+  emailB64: "eWFuZy5xaWFuMjEzMUBnbWFpbC5jb20=",
+  website: "https://yangqian.me",
+  jobTitle: "Computer Engineer",
   jobs: [
-    {
-      title: "Design Engineer",
-      company: "shadcncraft",
-      website: "https://shadcncraft.com?atp=ncdai",
-      experienceId: "shadcncraft",
-    },
-    {
-      title: "Founder",
-      company: "Quaric",
-      website: "https://quaric.com",
-      experienceId: "quaric",
-    },
+    // {
+    //   title: "Design Engineer",
+    //   company: "shadcncraft",
+    //   website: "https://shadcncraft.com?atp=ncdai",
+    //   experienceId: "shadcncraft",
+    // },
+    // {
+    //   title: "Founder",
+    //   company: "Quaric",
+    //   website: "https://quaric.com",
+    //   experienceId: "quaric",
+    // },
   ],
-  about: `- I’m Chánh Đại (call me Dai) — a Design Engineer with 5+ years of experience, known for pixel-perfect execution and an obsessive attention to detail.
-- Passionate about exploring new technologies and turning ideas into reality through polished, thoughtfully crafted projects.
-- Creator of [chanhdai.com](https://github.com/ncdai/chanhdai.com) (2.2k stars), [React Wheel Picker](https://react-wheel-picker.chanhdai.com) (50k+ weekly downloads, ▲ Vercel OSS Program), and [ZaDark](https://zadark.com) (80k+ downloads, 30k+ users) — peak metrics.
+  about: `- my name is Yang Qian, a computer engineer.
+- I'm currently a master student at Northwestern University, studying computer science.
+- I'm interested in computer vision, machine learning, and artificial intelligence.
+- I'm also interested in music and art.
+- I'm a quick learner and I'm always looking for new challenges.
+- I'm a team player and I'm always looking for new challenges.
+- I'm a quick learner and I'm always looking for new challenges.
 `,
   avatar: "https://assets.chanhdai.com/images/chanhdai-avatar-ghibli.webp",
   avatarVariants: {
@@ -47,18 +46,7 @@ export const USER: User = {
   ogImage:
     "https://assets.chanhdai.com/images/screenshot-og-image-dark.png?t=1778602757",
   namePronunciationUrl: "https://assets.chanhdai.com/audio/chanhdai.mp3",
-  timeZone: "Asia/Ho_Chi_Minh",
-  keywords: [
-    "ncdai",
-    "nguyenchanhdai",
-    "nguyen chanh dai",
-    "chanhdai",
-    "chanh dai",
-    "iamncdai",
-    "quaric",
-    "zadark",
-    "nguyễn chánh đại",
-    "chánh đại",
-  ],
-  dateCreated: "2023-10-20", // YYYY-MM-DD
+  timeZone: "America/Chicago",
+  keywords: ["yang qian", "yang qian portfolio"],
+  dateCreated: "2026-09-07", // YYYY-MM-DD
 }

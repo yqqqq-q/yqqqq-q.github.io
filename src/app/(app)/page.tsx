@@ -48,22 +48,22 @@ export default function HomePage() {
 
           <Overview />
           <SocialLinks />
-          <GitHubContributions />
+          {/* <GitHubContributions /> */}
           <Separator />
 
-          <Hello />
+          {/* <Hello />
           <SponsorsCarousel />
           <Testimonials />
           <Separator />
 
           <Components />
-          <Separator />
+          <Separator /> */}
 
-          <Blocks />
-          <Separator />
+          {/* <Blocks />
+          <Separator /> */}
 
-          <Blog />
-          <Separator />
+          {/* <Blog />
+          <Separator /> */}
 
           <TechStack />
           <Separator />
@@ -82,19 +82,19 @@ export default function HomePage() {
 
           <Certifications />
           <Separator />
-
+          {/* 
           <IntellectualProperty />
-          <Separator />
+          <Separator /> */}
 
-          <Bookmarks />
-          <Separator />
+          {/* <Bookmarks />
+          <Separator /> */}
 
-          <Suspense fallback={<InsightsSkeleton />}>
+          {/* <Suspense fallback={<InsightsSkeleton />}>
             <Insights />
           </Suspense>
-          <Separator />
+          <Separator /> */}
 
-          <Sponsors />
+          {/* <Sponsors /> */}
         </div>
       </div>
     </>
