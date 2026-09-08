@@ -6,7 +6,7 @@ import { USER } from "@/features/portfolio/data/user"
 
 export const SITE_INFO = {
   name: USER.displayName,
-  url: process.env.NEXT_PUBLIC_APP_URL || "https://yqqqq-q.github.io",
+  url: process.env.NEXT_PUBLIC_APP_URL || USER.website,
   ogImage: USER.ogImage,
   description: USER.bio,
   keywords: USER.keywords,

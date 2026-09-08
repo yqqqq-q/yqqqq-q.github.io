@@ -2,7 +2,7 @@ name: Deploy GitHub Pages
 
 on:
   push:
-    branches: [main]
+    branches: [main, personalized]
   workflow_dispatch:
 
 permissions:
@@ -19,6 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       NEXT_PUBLIC_APP_URL: https://yqqqq-q.github.io
+      NEXT_PUBLIC_GITHUB_CONTRIBUTIONS_API_URL: https://github-contributions-api.jogruber.de/v4
     steps:
       - uses: actions/checkout@v4
 
