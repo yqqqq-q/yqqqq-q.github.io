@@ -75,6 +75,8 @@ export const EDUCATION: Education[] = [
       "Machine Learning",
       "Arduino",
       "Networking",
+      "Digital Circuit",
+      "Analog Circuit",
       "Software Engineering",
       "E-Comerce Website",
       "Team Leadership",
